@@ -1,7 +1,10 @@
-import Image from "next/image";
+import NossosServicos from "@/components/servico/nossosServicos"
 
 export default function Landing() {
   return (
-    <div className="container bg-amber-600">Landing Page</div>
+    <div className="container">
+        <h1>Landing Page</h1>
+        <NossosServicos />
+    </div>
   );
 }
