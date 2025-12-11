@@ -1,5 +1,5 @@
 import servicos from "@/data/constants/servicos";
-import ItemServico from "./itemServico";
+import ItemServico from "./ItemServico"
 
 export default function NossosServicos () {
     return (
