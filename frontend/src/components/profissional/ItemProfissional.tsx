@@ -1,6 +1,7 @@
 import Profissional from "@/core/profissional/Profissional"
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX, IconBrandYoutube } from "@tabler/icons-react"
 import Image from "next/image"
+import Avaliacao from "../shared/Avaliacao"
 
 export interface ItemProfissionalProps {
     profissional: Profissional
@@ -14,12 +15,14 @@ export default function ItemProfissional(props: ItemProfissionalProps) {
                 <Image
                     src={profissional.imagemURL}
                     fill alt={profissional.nome}
-                    className="object-cover"
+                    className="object-cover object-top"
                 />
             </div>
             <div className="flex flex-col p-4 gap-5">
                 <span className="text-2xl font-black text-amber-50">{profissional.nome}</span>
                 <span className="text-zinc-400 text-sm">{profissional.descricao}</span>
+
+                <Avaliacao nota={profissional.avaliacao} quantidade={profissional.quantidadeAvaliacoes}/>
 
                 <div className="flex gap-3 text-zinc-300">
                     <IconBrandYoutube stroke={1}/>

@@ -16,7 +16,7 @@ const profissionais: Profissional[] = [
     descricao:
       "Quando o assunto é barba, ninguém faz melhor que Beto Brutal! Suas lâminas afiadas são lendárias e seu estilo é inconfundível. Para um visual marcante e robusto, ele é o seu homem!",
     imagemURL: "/profissionais/profissional-2.jpg",
-    avaliacao: 4.5,
+    avaliacao: 3.5,
     quantidadeAvaliacoes: 39,
   },
   {
